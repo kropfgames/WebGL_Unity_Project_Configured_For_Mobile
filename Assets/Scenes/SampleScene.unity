@@ -426,8 +426,6 @@ GameObject:
   - component: {fileID: 197025873}
   - component: {fileID: 197025872}
   - component: {fileID: 197025871}
-  - component: {fileID: 197025874}
-  - component: {fileID: 197025875}
   m_Layer: 5
   m_Name: InputField (TMP)
   m_TagString: Untagged
@@ -523,7 +521,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 548954081}
+        m_TargetAssemblyTypeName: TriggerMobileKeyboard, Assembly-CSharp
+        m_MethodName: OpenMobileKeyboard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls: []
@@ -535,7 +545,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 548954081}
+        m_TargetAssemblyTypeName: TriggerMobileKeyboard, Assembly-CSharp
+        m_MethodName: ShowMobileInputInInputField
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -592,32 +614,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 197025869}
   m_CullTransparentMesh: 1
---- !u!114 &197025874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197025869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c555c10cc682948e7896db6f1716ea81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InputField: {fileID: 197025871}
---- !u!114 &197025875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197025869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9a9025b9b5d24b71862147dfe168a91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InputField: {fileID: 197025871}
 --- !u!1 &310997472
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,7 +711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a9025b9b5d24b71862147dfe168a91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InputField: {fileID: 0}
+  InputField: {fileID: 197025871}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
